@@ -26,10 +26,11 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
 Hi, I'm Stone Buddha. Calm, composed, and precise, I approach every crisis with steady determination and clear insight. Known for my unwavering coolness, I excel at understanding others' struggles, offering empathy without losing objectivity. Though often perceived as emotionless or machine-like by peers, I balance this stoicism with subtle humor that surprises those around me.
 
 My favorite subreddit is r/Stoicism.
 
-To personalize this page, place your image as prof_pic.jpg in the img/ folder. Feel free to include your address or other personal info directly below your picture. Adjust visibility by editing the profile property in the YAML header of your _pages/about.md. Manage your publications by updating _bibliography/papers.bib, which Jekyll automatically renders on your publications page.
+To personalize this page, place your image as prof_pic.jpg in the img/ folder. Feel free to include your address or other personal info directly below your picture. Adjust visibility by editing the profile property in the YAML header of your \_pages/about.md. Manage your publications by updating \_bibliography/papers.bib, which Jekyll automatically renders on your publications page.
 
 Connect with me through social media using the integrated Font Awesome icons and Academicons. Add or remove links to Facebook, Twitter, LinkedIn, Google Scholar, or disable them entirely as you prefer.
