@@ -440,16 +440,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-i-joined-common-computer-as-a-swe-intern",
+          title: 'I joined Common Computer as a SWE intern.',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-i-finally-finished-my-internship-as-a-swe-at-common-computer",
+          title: 'I finally finished my internship as a SWE at Common Computer!',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-i-joined-common-computer-as-a-software-engineer",
+          title: 'I joined Common Computer as a Software Engineer!',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
