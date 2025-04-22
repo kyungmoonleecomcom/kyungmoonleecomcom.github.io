@@ -56,25 +56,27 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    {% comment %}
     <!-- Selected papers -->
-    {% comment %} {% if page.selected_papers %} {% endcomment %}
-    {% comment %}   <h2> {% endcomment %}
-    {% comment %}     <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a> {% endcomment %}
-    {% comment %}   </h2> {% endcomment %}
-    {% comment %}   {% include selected_papers.liquid %} {% endcomment %}
-    {% comment %} {% endif %} {% endcomment %}
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+    {% endif %}
 
     <!-- Social -->
-    {% comment %} {% if page.social %} {% endcomment %}
-    {% comment %}   <div class="social"> {% endcomment %}
-    {% comment %}     <div class="contact-icons">{% include social.liquid %}</div> {% endcomment %}
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% include social.liquid %}</div>
 
-    {% comment %}     <div class="contact-note">{{ site.contact_note }}</div> {% endcomment %}
-    {% comment %}   </div> {% endcomment %}
-    {% comment %} {% endif %} {% endcomment %}
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
 
-    {% comment %} {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %} {% endcomment %}
-    {% comment %}   {% include newsletter.liquid center=true %} {% endcomment %}
-    {% comment %} {% endif %} {% endcomment %}
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% include newsletter.liquid center=true %}
+    {% endif %}
+    {% endcomment %}
   </article>
 </div>
