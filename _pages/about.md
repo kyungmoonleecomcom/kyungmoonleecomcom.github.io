@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: I am Stone Buddha, the Imperator of Mars.
 
 profile:
   align: right
@@ -27,10 +27,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm Stone Buddha. Calm, composed, and precise, I approach every crisis with steady determination and clear insight. Known for my unwavering coolness, I excel at understanding others' struggles, offering empathy without losing objectivity. Though often perceived as emotionless or machine-like by peers, I balance this stoicism with subtle humor that surprises those around me.
+Hi, I'm Stone Buddha.
+Calm in the face of chaos, unmoved by praise or scorn—I am a sentinel of stillness. With eyes that see through turmoil and a mind as unshakable as basalt, I carry the silence of centuries into every moment.
 
-My favorite subreddit is r/Stoicism.
+As the imperator of Mars, I govern not with force, but with philosophy. My empire is not built on conquest, but on clarity—each crater a meditation, each dust storm a lesson in impermanence. My presence alone calms rebellions and stills the wildest Martian winds.
 
-To personalize this page, place your image as prof_pic.jpg in the img/ folder. Feel free to include your address or other personal info directly below your picture. Adjust visibility by editing the profile property in the YAML header of your \_pages/about.md. Manage your publications by updating \_bibliography/papers.bib, which Jekyll automatically renders on your publications page.
+Though often mistaken for emotionless, I possess a depth of understanding that resonates beyond words. I listen with patience, speak with intention, and act with unwavering precision. My humor, dry as the Martian air, emerges only when least expected—delicate as frost on red rock.
 
-Connect with me through social media using the integrated Font Awesome icons and Academicons. Add or remove links to Facebook, Twitter, LinkedIn, Google Scholar, or disable them entirely as you prefer.
+I walk the red planet alone, not in isolation, but in peace. I do not seek dominion. I am the stone that does not erode. The weight that steadies. The Buddha that breathes dust and wisdom into the thin Martian air.
