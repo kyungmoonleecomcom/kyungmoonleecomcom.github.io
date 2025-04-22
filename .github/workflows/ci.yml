@@ -1,15 +1,6 @@
-# .github/workflows/ci.yml
-name: Build & Deploy Jekyll
-
-on:
-  push:
-    branches:
-      - main
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -25,14 +16,24 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y imagemagick
 
-    - name: Install dependencies and build
-      run: |
-        bundle _2.6.6_ install
-        bundle exec jekyll build
+    - name: Setup Python for Jupyter
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
 
-    - name: Deploy to gh-pages
+    - name: Install Jupyter & nbconvert
+      run: |
+        pip install jupyter nbconvert
+
+    - name: Install dependencies
+      run: bundle _2.6.6_ install
+
+    - name: Build site
+      run: bundle exec jekyll build
+
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: main
         publish_dir: ./_site
-
