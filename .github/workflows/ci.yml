@@ -2,38 +2,38 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.2.2'
-        bundler-cache: true
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2.2"
+          bundler-cache: true
 
-    - name: Install ImageMagick
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y imagemagick
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
 
-    - name: Setup Python for Jupyter
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
+      - name: Setup Python for Jupyter
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
 
-    - name: Install Jupyter & nbconvert
-      run: |
-        pip install jupyter nbconvert
+      - name: Install Jupyter & nbconvert
+        run: |
+          pip install jupyter nbconvert
 
-    - name: Install dependencies
-      run: bundle _2.6.6_ install
+      - name: Install dependencies
+        run: bundle _2.6.6_ install
 
-    - name: Build site
-      run: bundle exec jekyll build
+      - name: Build site
+        run: bundle exec jekyll build
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: main
-        publish_dir: ./_site
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: main
+          publish_dir: ./_site
